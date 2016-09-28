@@ -1,0 +1,11 @@
+27.09.2016
+
+a toggle nav bar for mobile screen:
+
+<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+							<span class="sr-only">Toggle navigation	</span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+</button>
+						
