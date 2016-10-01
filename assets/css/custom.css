@@ -37,6 +37,31 @@ h4 {
 	font-size: 18px;
 }
 
+p.lead {
+	font-weight: normal;
+}
+
+button, input, .btn, a.btn {
+	-webkit-font-smoothing: antialiased;
+	text-rendering: optimizelegibility;
+	color: white;
+}
+
+.btn {
+	font-weight: bold;
+}
+
+.btn-danger {
+	background-color: #dd5638;
+	border-color: #d95131;
+}
+
+img {
+	max-width: 100%;
+}
+
+
+
 /* ==== HERO ==== */
 
 #hero {
@@ -69,5 +94,29 @@ h4 {
 	margin-top: 30px;
 }
 
-
+/*=========LAYOUT===========*/
  
+ #msgtoadmin {
+	 background: #3e4249;
+	 padding: 20px 0;
+	 color: white;
+	 -webkit-font-smoothing: antialiased;
+	text-rendering: optimizelegibility;
+	font-size: 1.2em;
+ }
+ 
+ #msgtoadmin p{
+	 margin: 7px 0 0 0;
+	 
+ }
+ 
+ #myModal textarea{
+	 
+	 width: 25em; 
+	 height: 16em;
+ }
+ 
+ 
+ 
+ 
+ /*margin: 0px; width: 348px; height: 197px;*/
