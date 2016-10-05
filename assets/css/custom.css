@@ -41,6 +41,10 @@ p.lead {
 	font-weight: normal;
 }
 
+p{
+	margin: 0px 0px 15px 0px;
+}
+
 button, input, .btn, a.btn {
 	-webkit-font-smoothing: antialiased;
 	text-rendering: optimizelegibility;
@@ -98,6 +102,12 @@ img {
 
 /*=========LAYOUT===========*/
  
+ .row+.row{
+	 margin-top: 20px;
+	 
+ }
+ 
+ 
  #msgtoadmin {
 	 background: #3e4249;
 	 padding: 20px 0;
@@ -140,7 +150,26 @@ section h2 {
 	color: white;
 }
 
+footer{
+	background: #3e4249;
+	color: white;
+	padding: 20px 0 10px;
+	font-size: 12px;
+	
+}
 
+footer p{
+	margin: 0;
+}
+
+
+footer a:link, footer a:visited{
+	color: white;
+}
+
+footer a:hover{
+	color: #dd5638;
+}
 /*===custom icon sprites	===*/
 
 i.ci {
@@ -157,3 +186,16 @@ i.ci {
 .ci.ci-instructor	{ background-position: -160px 0; }
 .ci.ci-device		{ background-position: -200px 0; }
 
+
+/*media queries*/
+
+@media screen and (max-width: 768px){
+	.logo{
+		width: 50%;
+	}
+	
+	#optin p{
+		margin: 0 0 10px;
+	}
+	
+}
