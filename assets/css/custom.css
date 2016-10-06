@@ -8,6 +8,10 @@ Blue Gray:  #3e4249
 
 /* ==== GENERAL ==== */
 
+a:link, a:visited {
+	color: #dd5638;
+}
+
 body{
 	margin-top: 50px;
 	font-family: 'proxima-nova', 'Raleway', Helvetica, sans-serif;
