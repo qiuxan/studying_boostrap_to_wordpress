@@ -41,6 +41,31 @@ h4 {
 	font-size: 18px;
 }
 
+.feature-image{
+	display: table;
+	width: 100%;
+	
+}
+
+.feature-image-default{
+	background: url('../img/stuff-feature.jpg') no-repeat;
+	background-size: cover;
+
+}
+
+.feature-image-default-alt{
+	background: url('../img/hipster-stuff.jpg') no-repeat;
+	background-size: cover;
+
+}
+
+.feature-image h1{
+	display: table-cell;
+	vertical-align: middle;
+	text-align: center;
+	color: white;
+}
+
 p.lead {
 	font-weight: normal;
 }
@@ -70,6 +95,11 @@ img {
 
 .modal-content{
 	background: url('../img/tile.jpg') top left repeat;
+}
+
+a:hover {
+	text-decoration: none;
+	color: #c9302c;
 }
 
 /* ==== HERO ==== */
@@ -144,6 +174,17 @@ section h2 {
     margin: 20px 0 40px;
 }
  
+section h3 {
+    margin: 30px 0 10px;
+}
+
+#primary{
+	padding-top: 40px;
+	padding-bottom: 40px;
+	
+}
+ 
+ 
 #our-advantage{
 	background:white; 
 }
@@ -174,6 +215,127 @@ footer a:link, footer a:visited{
 footer a:hover{
 	color: #dd5638;
 }
+
+.post-detail i.fa{
+	padding-left: 10px;
+	
+}
+
+.post-detail i.fa:first-child{
+	padding: 0;
+}
+
+/*--------blog------------*/
+
+.post, .widget {
+	position: relative;
+	border: solid 1px #ddd;
+	background: white;
+	margin: 0 0 40px;
+	border-radius: 4px;
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+}
+
+.post header,
+.post .post-excerpt{
+	padding: 20px;
+	
+}
+
+.post header h3,
+.post header h1{
+	margin: 0px 0px 15px 0px;
+	padding: 0px 0px 15px 0px;
+	border-bottom: solid 1px #ddd;
+}
+
+.post header h1{
+	
+	font-size: 24px;
+}
+
+
+.post-image{
+	height: auto;
+}
+
+.post-details{
+	font-size: 12px;
+	width: 90%;
+	
+}
+
+
+/*--------widgets------------*/
+
+
+.widget{
+	padding: 20px;
+	
+}
+
+.widget h4{
+	margin: 0 0 10px;
+	padding: 0 0 10px;
+	border-bottom: solid 1px #ddd;
+		
+}
+
+
+.widget ul{
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+.widget ul li{
+	margin: 0 0 5px;
+	
+}
+
+.widget ul li:hover{
+	position: relative;
+	left: 1px;
+}
+
+/*--------comment------------*/
+
+.post-comments-badge{
+	height: 70px;
+	width: 70px;
+	position: absolute;
+	top: 25px;
+	right: 20px;
+	border: none;
+	-webkit-border-radius: 100%;
+	-moz-border-radius: 100%;
+	border-radius: 100%;
+	
+	background: #79b044;
+	text-align: center;
+	display: table;
+	
+}
+
+.post-comments-badge a{
+	display: table-cell;
+	vertical-align: middle;
+	color: white;
+	font-size: 20px;
+	line-height: 20px;
+}
+
+.post-comments-badge i.fa{
+	display: block;
+	font-size: 15px;
+	padding: 0;
+	margin-bottom: 4px;
+}
+
+.post-comments-badge:hover{
+	background-color: #8bc653;
+}
 /*===custom icon sprites	===*/
 
 i.ci {
@@ -189,6 +351,35 @@ i.ci {
 .ci.ci-community	{ background-position: -120px 0; }
 .ci.ci-instructor	{ background-position: -160px 0; }
 .ci.ci-device		{ background-position: -200px 0; }
+
+
+/*--------forms------------*/
+
+label{
+	display: block;
+	font-weight: bold;
+}
+
+
+input[type="text"],
+input[type="email"],
+input[type="url"],
+input[type="password"],
+input[type="search"],
+textarea{
+	color: #666;
+	border: 1px solid #ccc;
+	border-radius: 3px;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	display: block;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	width: 100%;
+	padding: 6px 12px;
+	
+}
 
 
 /*media queries*/
