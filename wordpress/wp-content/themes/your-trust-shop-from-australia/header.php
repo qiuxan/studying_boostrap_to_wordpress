@@ -61,10 +61,17 @@
 					<?php
 						wp_nav_menu(array(
 							
-							'theme_location'=>'primary',
-							'container'	=>'nav',
+							'theme_location'	=> 'primary',
+							'container'			=> 'nav',
 							'container_class'	=> 'navbar-collapse collapse',
-							'menuclass'	=>'nav navbar-nav navbar-right'
+							'menu_class'	=>'nav navbar-nav navbar-right'
+							
+							
+							
+							//
+							//
+							//
+							//'menu_class'		=> 'nav navbar-nav navbar-right'
 							
 						) );
 					?>

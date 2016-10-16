@@ -5,10 +5,6 @@
 
  */
 
-//Custom Fields btn_text
-$b_word 		=get_post_meta( 7, 'b_word',true);
-$contact_text 		=get_post_meta( 7, 'contact_text',true);
-$contacta_btn_text 		=get_post_meta( 7, 'contacta_btn_text',true);
 
 
 //advance custom fields
@@ -34,42 +30,17 @@ $our_features_body 		=get_field('our_features_body');
 
 get_header(); ?>
 
-<section id="hero" data-type="background" data-speed="5"><!--============hero
-		=================-->
+	<?php 
+		get_template_part('content','hero');
+		get_template_part('content','msgtoadmin');
+		get_template_part('content', 'ouradvantage');
 		
-		<article>
-			<div class="container claerfix">
-				<div class="row">
-					<div class="col-sm-5">
-						<img src="<?php bloginfo('stylesheet_directory'); ?>/assets/img/logo-badge.png" alt="Bootstrap to Wordpress" class="logo">
-					</div> <!--col-->
-					<div class="col-sm-7 hero-text">
-						<h1><?php bloginfo('name');?></h1>
-			            <p class="lead"><?php bloginfo('description');?><b><?php echo $b_word;?></b></p>
+	?>
+	
+	
+	
+	
 
-					</div> <!--col-->
-				</div>		<!--row-->
-			</div> <!--container-->
-		</article>
-	</section> <!--hero-->
-	
-	
-	
-	<!--msgtoadmin-->
-	<section id="msgtoadmin">
-		<div class="container">
-			<div class="row">
-				<div class="col-sm-8">
-					<p class="lead"><?php echo $contact_text;?></p>
-				</div> <!--col-->
-				
-				<div class="col-sm-4">
-					<button class="btn btn-success btn-lg btn-block" data-toggle="modal" data-target="#myModal"><?php echo $contacta_btn_text;?></button>
-				</div> <!--col-->
-				
-			</div>
-		</div> <!--container-->
-	</section> <!--msgtoadmin end-->
 	
 	
 	
@@ -78,48 +49,6 @@ get_header(); ?>
 	
 	
 	
-	
-	<section id="our-advantage">
-		
-		<div class="container">
-			
-			<div class="section-header">
-				
-				<!--if feature img exist-->
-				
-				<?php    
-					if(!empty($notebook_image)):?>
-					<img src="<?php echo $notebook_image['url'];?>" alt="<?php echo $notebook_image['alt'];?>">
-				<?php endif;?>
-				
-				
-				
-				<h2><?php echo $notebook_section__title;?></h2>
-			</div> <!--s headere-->
-			
-			<div class="row">
-				<div class="col-sm-8 col-sm-offset-2"> 
-					<h3><?php echo $title1;?></h3>
-					<p><?php echo $information_content1;?></p>
-
-					<h3><?php echo $title2;?></h3>
-					<p><?php echo $information_content2;?></p>
-					
-
-					<h3><?php echo $title3;?></h3>
-					<p><?php echo $information_content3;?>/p>
-					
-					<h3><?php echo $title4;?></h3>
-					<p><?php echo $information_content4;?></p>
-
-				</div> <!--col-->
-				
-			</div> <!--row-->
-		
-		</div> <!--container-->
-				
-		
-	</section> <!--ouradvantage-->
 	
 	
 	<section id="quick-link">

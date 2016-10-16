@@ -244,10 +244,13 @@ footer a:hover{
 .post header,
 .post .post-excerpt,
 .post .post-body,
-#comments . comments-wrap{
+#comments .comments-wrap{
 	padding: 20px;
-	
 }
+
+
+
+
 
 .post header h3,
 .post header h1{
@@ -271,6 +274,9 @@ footer a:hover{
 	width: 90%;
 	
 }
+
+
+
 
 
 /*--------widgets------------*/
