@@ -1290,7 +1290,7 @@ function comments_popup_link( $zero = false, $one = false, $more = false, $css_c
  *     @type string $respond_id The selector identifying the responding comment. Passed as the third parameter
  *                              to addComment.moveForm(), and appended to the link URL as a hash value.
  *                              Default 'respond'.
- *     @type string $reply_text The text of the Reply link. Default 'Reply'.
+ *     @type string $f The text of the Reply link. Default 'Reply'.
  *     @type string $login_text The text of the link to reply if logged out. Default 'Log in to Reply'.
  *     @type int    $depth'     The depth of the new comment. Must be greater than 0 and less than the value
  *                              of the 'thread_comments_depth' option set in Settings > Discussion. Default 0.
@@ -1307,7 +1307,7 @@ function get_comment_reply_link( $args = array(), $comment = null, $post = null 
 	$defaults = array(
 		'add_below'  => 'comment',
 		'respond_id' => 'respond',
-		'reply_text' => __('Reply'),
+		'reply_text' => __('回应'),
 		'login_text' => __('Log in to Reply'),
 		'depth'      => 0,
 		'before'     => '',
@@ -1803,7 +1803,7 @@ class Walker_Comment extends Walker {
 		<?php endif; ?>
 		<div class="comment-author vcard">
 			<?php if ( 0 != $args['avatar_size'] ) echo get_avatar( $comment, $args['avatar_size'] ); ?>
-			<?php printf( __( '<cite class="fn">%s</cite> <span class="says">says:</span>' ), get_comment_author_link() ); ?>
+			<?php printf( __( '<cite class="fn">%s</cite> <span class="says">说:</span>' ), get_comment_author_link() ); ?>
 		</div>
 		<?php if ( '0' == $comment->comment_approved ) : ?>
 		<em class="comment-awaiting-moderation"><?php _e( 'Your comment is awaiting moderation.' ) ?></em>
@@ -1848,7 +1848,7 @@ class Walker_Comment extends Walker {
 				<footer class="comment-meta">
 					<div class="comment-author vcard">
 						<?php if ( 0 != $args['avatar_size'] ) echo get_avatar( $comment, $args['avatar_size'] ); ?>
-						<?php printf( __( '%s <span class="says">says:</span>' ), sprintf( '<b class="fn">%s</b>', get_comment_author_link() ) ); ?>
+						<?php printf( __( '%s <span class="says">说:</span>' ), sprintf( '<b class="fn">%s</b>', get_comment_author_link() ) ); ?>
 					</div><!-- .comment-author -->
 
 					<div class="comment-metadata">
